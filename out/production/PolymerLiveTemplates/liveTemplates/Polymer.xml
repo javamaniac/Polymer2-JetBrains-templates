@@ -1,0 +1,8 @@
+<templateSet group="Polymer">
+  <template name="pe" value="&lt;dom-module id=&quot;$1$&quot;&gt;&#10;    &lt;template&gt;&#10;        &lt;style&gt;&#10;            :host {&#10;                display: block;&#10;            }&#10;        &lt;/style&gt;&#10;        $END$&#10;    &lt;/template&gt;&#10;    &lt;script&gt;&#10;        Polymer({&#10;            is: '$1$'&#10;        });&#10;    &lt;/script&gt;&#10;&lt;/dom-module&gt;" description="Polymer Element" toReformat="false" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
