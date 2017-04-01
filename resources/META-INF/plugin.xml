@@ -2,16 +2,21 @@
   <id>de.ifahrentholz.snippets.polymer</id>
   <name>Polymer Snippets</name>
   <version>1.0</version>
-  <vendor email="ingof.work@gmail.com" url="http://www.ifahrentholz.de">Ingo Fahrentholz</vendor>
+  <vendor email="ingof.work@gmail.com" url="https://github.com/ifahrentholz/intellij-polymer-live-templates">Polymer Snippets:</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+      <img width="55" height="44" src="https://www.polymer-project.org/images/logos/p-logo.png" />
+      <br /> <br />
+      <div>
+        A collection of common Polymer snippets.
+
+        <br /><br />
+        Please report any issues <a href="https://github.com/ifahrentholz/intellij-polymer-live-templates/issues">here</a>.
+      </div>
     ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+      Initial.
     ]]>
   </change-notes>
 
@@ -20,9 +25,9 @@
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
-  <!-- uncomment to enable plugin in all products
+
   <depends>com.intellij.modules.lang</depends>
-  -->
+
 
   <extensions defaultExtensionNs="com.intellij">
     <defaultLiveTemplatesProvider implementation="PolymerTemplateProvider"/>
