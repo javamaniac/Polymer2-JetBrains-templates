@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>de.ifahrentholz.snippets.polymer</id>
   <name>Polymer Snippets</name>
-  <version>1.0</version>
+  <version>1.1.0</version>
   <vendor email="ingof.work@gmail.com" url="https://github.com/ifahrentholz/intellij-polymer-live-templates">Polymer Snippets:</vendor>
 
   <description><![CDATA[
@@ -16,7 +16,8 @@
     ]]></description>
 
   <change-notes><![CDATA[
-      Initial.
+      Add addtional snippet for "Polymer Element" (Abbreviation: pe)
+      Update the README.md
     ]]>
   </change-notes>
 

@@ -1,3 +1,35 @@
+# Polymer Snippets for Intellij
+
+This is a port of the VSCode snippet collection from [chimon2000](https://github.com/chimon2000/vscode-polymer-snippets).
+
+![Usage in Webstorm](documentation/images/polymer-element.gif)
+
+
+# Installation
+
+#### From Jetbrains Plugin Repository
+
+1. Goto Preferences -> Plugins
+2. Click on Browse Repositories
+3. Search for "Polymer Snippets"
+
+
+#### By copy XML file
+
+1. Download resources/liveTemplates/Polymer.xml
+2. Place the XML file in your templates folder : On OSX that would be ~/Library/Preferences/WebStorm{Version}/templates
+3. Restart WebStorm
+
+
+# Snippets
+
+You can see what snippets are available by navigating to the live templates:
+1. Goto Preferences -> Editor -> Live Templates
+2. Select Polymer
+
+
+
+# License
 The MIT License (MIT)
 
 Copyright (c) 2017 Ingo Fahrentholz

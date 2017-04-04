@@ -1,5 +1,5 @@
 <templateSet group="Polymer">
-  <template name="arrsel" value="&lt;array-selector id=&quot;$id$&quot; &#10;                items=&quot;{{$array$}}&quot; &#10;                selected=&quot;{{$selected$}}&quot; &#10;                $multi$ &#10;                $toggle$&gt;&#10;  $END$&#10;&lt;/array-selector&gt;&#10;" description="Array selector" toReformat="false" toShortenFQNames="true">
+  <template name="arrsel" value="&lt;array-selector id=&quot;$id$&quot; &#10;                items=&quot;{{$array$}}&quot; &#10;                selected=&quot;{{$selected$}}&quot; &#10;                $multi$ &#10;                $toggle$&gt;&#10;  $END$&#10;&lt;/array-selector&gt;&#10;" description="Array selector" toReformat="true" toShortenFQNames="true">
     <variable name="id" expression="" defaultValue="&quot;selector&quot;" alwaysStopAt="true" />
     <variable name="array" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
     <variable name="selected" expression="" defaultValue="&quot;selected&quot;" alwaysStopAt="true" />
@@ -9,7 +9,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="ce" value="var $tmpl$ = document.querySelector('$template$');&#10;&#10;var $WidgetProto$ = Object.create(HTMLElement.prototype);&#10;&#10;$WidgetProto$.createdCallback = function() {&#10;  var root = this.createShadowRoot();&#10;  root.appendChild(document.importNode($tmpl$.content, true));&#10;};&#10;&#10;var $Widget$ = document.registerElement('$my-widget$', {&#10;  prototype: $WidgetProto$&#10;});&#10;$END$" toReformat="false" toShortenFQNames="true">
+  <template name="ce" value="var $tmpl$ = document.querySelector('$template$');&#10;&#10;var $WidgetProto$ = Object.create(HTMLElement.prototype);&#10;&#10;$WidgetProto$.createdCallback = function() {&#10;  var root = this.createShadowRoot();&#10;  root.appendChild(document.importNode($tmpl$.content, true));&#10;};&#10;&#10;var $Widget$ = document.registerElement('$my-widget$', {&#10;  prototype: $WidgetProto$&#10;});&#10;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="tmpl" expression="" defaultValue="&quot;tmpl&quot;" alwaysStopAt="true" />
     <variable name="template" expression="" defaultValue="&quot;template&quot;" alwaysStopAt="true" />
     <variable name="WidgetProto" expression="" defaultValue="&quot;WidgetProto&quot;" alwaysStopAt="true" />
@@ -18,7 +18,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="fba" value="&lt;firebase-auth &#10;  id=&quot;$firebaseAuth$&quot; &#10;  user=&quot;{{$user$}}&quot;&#10;  status-known=&quot;{{$statusKnown$}}&quot; &#10;  location=&quot;https://$&lt;YOUR_FIREBASE_APP$.firebaseio.com&quot; &#10;  provider=&quot;{{$provider$}}&quot; &#10;  on-error=&quot;$errorHandler$&quot; &#10;  on-user-created=&quot;$userSuccessHandler$&quot; &#10;  on-password-changed=&quot;$userSuccessHandler$&quot; &#10;  on-password-reset=&quot;$userSuccessHandler$&quot; &#10;  on-user-removed=&quot;$userSuccessHandler$&quot;&gt;&#10;&lt;/firebase-auth&gt;&#10;$END$" description="Element for Firebase authentication API" toReformat="false" toShortenFQNames="true">
+  <template name="fba" value="&lt;firebase-auth &#10;  id=&quot;$firebaseAuth$&quot; &#10;  user=&quot;{{$user$}}&quot;&#10;  status-known=&quot;{{$statusKnown$}}&quot; &#10;  location=&quot;https://$&lt;YOUR_FIREBASE_APP$.firebaseio.com&quot; &#10;  provider=&quot;{{$provider$}}&quot; &#10;  on-error=&quot;$errorHandler$&quot; &#10;  on-user-created=&quot;$userSuccessHandler$&quot; &#10;  on-password-changed=&quot;$userSuccessHandler$&quot; &#10;  on-password-reset=&quot;$userSuccessHandler$&quot; &#10;  on-user-removed=&quot;$userSuccessHandler$&quot;&gt;&#10;&lt;/firebase-auth&gt;&#10;$END$" description="Element for Firebase authentication API" toReformat="true" toShortenFQNames="true">
     <variable name="firebaseAuth" expression="" defaultValue="&quot;firebaseAuth&quot;" alwaysStopAt="true" />
     <variable name="user" expression="" defaultValue="&quot;user&quot;" alwaysStopAt="true" />
     <variable name="statusKnown" expression="" defaultValue="&quot;statusKnown&quot;" alwaysStopAt="true" />
@@ -29,28 +29,28 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="hii" value="&lt;link rel=&quot;import&quot; href=&quot;$bower_components$/iron-$2$/iron-$2$.html&quot;&gt;&#10;$END$" description="Import iron-element" toReformat="false" toShortenFQNames="true">
+  <template name="hii" value="&lt;link rel=&quot;import&quot; href=&quot;$bower_components$/iron-$2$/iron-$2$.html&quot;&gt;&#10;$END$" description="Import iron-element" toReformat="true" toShortenFQNames="true">
     <variable name="bower_components" expression="" defaultValue="&quot;bower_components&quot;" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="hip" value="&lt;link rel=&quot;import&quot; href=&quot;$bower_components$/paper-$2$/paper-$2$.html&quot;&gt;&#10;$END$" description="import paper-element" toReformat="false" toShortenFQNames="true">
+  <template name="hip" value="&lt;link rel=&quot;import&quot; href=&quot;$bower_components$/paper-$2$/paper-$2$.html&quot;&gt;&#10;$END$" description="import paper-element" toReformat="true" toShortenFQNames="true">
     <variable name="bower_components" expression="" defaultValue="&quot;bower_components&quot;" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="hi" value="&lt;link rel=&quot;import&quot; href=&quot;$bower_components$/$2$/$2$.html&quot;&gt;&#10;$END$" description="html import" toReformat="false" toShortenFQNames="true">
+  <template name="hi" value="&lt;link rel=&quot;import&quot; href=&quot;$bower_components$/$2$/$2$.html&quot;&gt;&#10;$END$" shortcut="TAB" description="html import" toReformat="true" toShortenFQNames="true">
     <variable name="bower_components" expression="" defaultValue="&quot;bower_components&quot;" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="ph" value="&lt;!DOCTYPE html&gt;&#10;&lt;html&gt;&#10;&lt;head&gt;&#10;  &lt;meta charset=&quot;utf-8&quot;&gt;&#10;&#10;  &lt;title&gt;$0$&lt;/title&gt;&#10;  &lt;meta name=&quot;description&quot; content=&quot;$1$&quot;&gt;&#10;&#10;  &lt;!-- Mobile --&gt;&#10;  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes&quot;&gt;&#10;&#10;  &lt;!-- Chrome / Android --&gt;&#10;  &lt;meta name=&quot;mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&#10;  &lt;meta name=&quot;theme-color&quot; content=&quot;black&quot;&gt;&#10;  &lt;link rel=&quot;icon&quot; href=&quot;icon.png&quot;&gt;&#10;&#10;  &lt;!-- Safari / iOS --&gt;&#10;  &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&#10;  &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot;&gt;&#10;  &lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;apple-touch-icon.png&quot;&gt;&#10;&#10;  &lt;!-- Web Components --&gt;&#10;  &lt;script src=&quot;$bower_components$/webcomponentsjs/webcomponents-lite.js&quot;&gt;&lt;/script&gt;&#10;&lt;/head&gt;&#10;&lt;body unresolved&gt;&#10;  $END$&#10;&lt;/body&gt;&#10;&lt;/html&gt;" description="polymer html boilerplate" toReformat="false" toShortenFQNames="true">
+  <template name="ph" value="&lt;!DOCTYPE html&gt;&#10;&lt;html&gt;&#10;&lt;head&gt;&#10;  &lt;meta charset=&quot;utf-8&quot;&gt;&#10;&#10;  &lt;title&gt;$0$&lt;/title&gt;&#10;  &lt;meta name=&quot;description&quot; content=&quot;$1$&quot;&gt;&#10;&#10;  &lt;!-- Mobile --&gt;&#10;  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes&quot;&gt;&#10;&#10;  &lt;!-- Chrome / Android --&gt;&#10;  &lt;meta name=&quot;mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&#10;  &lt;meta name=&quot;theme-color&quot; content=&quot;black&quot;&gt;&#10;  &lt;link rel=&quot;icon&quot; href=&quot;icon.png&quot;&gt;&#10;&#10;  &lt;!-- Safari / iOS --&gt;&#10;  &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&#10;  &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot;&gt;&#10;  &lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;apple-touch-icon.png&quot;&gt;&#10;&#10;  &lt;!-- Web Components --&gt;&#10;  &lt;script src=&quot;$bower_components$/webcomponentsjs/webcomponents-lite.js&quot;&gt;&lt;/script&gt;&#10;&lt;/head&gt;&#10;&lt;body unresolved&gt;&#10;  $END$&#10;&lt;/body&gt;&#10;&lt;/html&gt;" description="polymer html boilerplate" toReformat="true" toShortenFQNames="true">
     <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="bower_components" expression="" defaultValue="&quot;bower_components&quot;" alwaysStopAt="true" />
@@ -58,14 +58,15 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iron-a11y-keys" value="&lt;iron-a11y-keys target=&quot;$0$&quot; keys=&quot;$up down left right$&quot; on-keys-pressed=&quot;{{$arrowHandler$}}&quot;&gt;&lt;/iron-a11y-keys&gt;&#10;$END$" toReformat="false" toShortenFQNames="true">
+  <template name="iron-a11y-keys" value="&lt;iron-a11y-keys target=&quot;$0$&quot; keys=&quot;$up_down_left_right$&quot; on-keys-pressed=&quot;{{$arrowHandler$}}&quot;&gt;&lt;/iron-a11y-keys&gt;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="up_down_left_right" expression="" defaultValue="&quot;up down left right&quot;" alwaysStopAt="true" />
     <variable name="arrowHandler" expression="" defaultValue="&quot;arrowHandler&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iron-ajax" value="&lt;iron-ajax&#10;   $auto$&#10;   url=&quot;$0$&quot;&#10;   handle-as=&quot;$json$&quot;&#10;   on-response=&quot;$handleResponse$&quot;&gt;&lt;/iron-ajax&gt;&#10;$END$" toReformat="false" toShortenFQNames="true">
+  <template name="iron-ajax" value="&lt;iron-ajax&#10;   $auto$&#10;   url=&quot;$0$&quot;&#10;   handle-as=&quot;$json$&quot;&#10;   on-response=&quot;$handleResponse$&quot;&gt;&lt;/iron-ajax&gt;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="auto" expression="" defaultValue="&quot;auto&quot;" alwaysStopAt="true" />
     <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="json" expression="" defaultValue="&quot;json&quot;" alwaysStopAt="true" />
@@ -74,24 +75,24 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iron-autogrow-textarea" value="&lt;iron-autogrow-textarea&gt;&#10;  &lt;textarea&gt;$END$&lt;/textarea&gt;&#10;&lt;/iron-autogrow-textarea&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="iron-autogrow-textarea" value="&lt;iron-autogrow-textarea&gt;&#10;  &lt;textarea&gt;$END$&lt;/textarea&gt;&#10;&lt;/iron-autogrow-textarea&gt;" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iron-collapse" value="&lt;iron-collapse id=&quot;$collapse$&quot;&gt;&#10;  $END$Content goes here...&#10;&lt;/iron-collapse&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="iron-collapse" value="&lt;iron-collapse id=&quot;$collapse$&quot;&gt;&#10;  $END$Content goes here...&#10;&lt;/iron-collapse&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="collapse" expression="" defaultValue="&quot;collapse&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iron-doc-viewer" value="&lt;iron-doc-viewer descriptor=&quot;{{$elementDescription$}}&quot;&gt;&lt;/iron-doc-viewer&gt;&#10;$END$" toReformat="false" toShortenFQNames="true">
+  <template name="iron-doc-viewer" value="&lt;iron-doc-viewer descriptor=&quot;{{$elementDescription$}}&quot;&gt;&lt;/iron-doc-viewer&gt;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="elementDescription" expression="" defaultValue="&quot;elementDescription&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iron-form" value="&lt;form is=&quot;iron-form&quot; id=&quot;$form$&quot; method=&quot;$post$&quot; action=&quot;$form_handler$&quot;&gt;&#10;  $END$&#10;&lt;/form&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="iron-form" value="&lt;form is=&quot;iron-form&quot; id=&quot;$form$&quot; method=&quot;$post$&quot; action=&quot;$form_handler$&quot;&gt;&#10;  $END$&#10;&lt;/form&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="form" expression="" defaultValue="&quot;form&quot;" alwaysStopAt="true" />
     <variable name="post" expression="" defaultValue="&quot;post&quot;" alwaysStopAt="true" />
     <variable name="form_handler" expression="" defaultValue="&quot;form_handler&quot;" alwaysStopAt="true" />
@@ -99,19 +100,19 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iron-icon" value="&lt;iron-icon icon=&quot;$END$&quot;&gt;&lt;/iron-icon&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="iron-icon" value="&lt;iron-icon icon=&quot;$END$&quot;&gt;&lt;/iron-icon&gt;" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iron-iconset-svg" value="&lt;iron-iconset-svg name=&quot;$my_icons$&quot; size=&quot;$24$&quot;&gt;&#10;  $END$&#10;&lt;/iron-iconset-svg&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="iron-iconset-svg" value="&lt;iron-iconset-svg name=&quot;$my_icons$&quot; size=&quot;$24$&quot;&gt;&#10;  $END$&#10;&lt;/iron-iconset-svg&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="my_icons" expression="" defaultValue="&quot;my_icons&quot;" alwaysStopAt="true" />
     <variable name="24" expression="" defaultValue="&quot;24&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iron-iconset" value="&lt;iron-iconset name=&quot;$my_icons$&quot; src=&quot;$my_icons_file$&quot; width=&quot;$96$&quot; size=&quot;$24$&quot;&#10;    icons=&quot;$location_place_starta_stopb_bus_car_train_walk$&quot;&gt;&#10;&lt;/iron-iconset&gt;&#10;$END$" toReformat="false" toShortenFQNames="true">
+  <template name="iron-iconset" value="&lt;iron-iconset name=&quot;$my_icons$&quot; src=&quot;$my_icons_file$&quot; width=&quot;$96$&quot; size=&quot;$24$&quot;&#10;    icons=&quot;$location_place_starta_stopb_bus_car_train_walk$&quot;&gt;&#10;&lt;/iron-iconset&gt;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="my_icons" expression="" defaultValue="&quot;my-icons&quot;" alwaysStopAt="true" />
     <variable name="my_icons_file" expression="" defaultValue="&quot;my-icons.png&quot;" alwaysStopAt="true" />
     <variable name="96" expression="" defaultValue="&quot;96&quot;" alwaysStopAt="true" />
@@ -121,7 +122,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iron-image" value="&lt;iron-image src=&quot;$0$&quot; $preload$ sizing=&quot;$cover$&quot;&gt;&lt;/iron-image&gt;&#10;$END$" toReformat="false" toShortenFQNames="true">
+  <template name="iron-image" value="&lt;iron-image src=&quot;$0$&quot; $preload$ sizing=&quot;$cover$&quot;&gt;&lt;/iron-image&gt;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="preload" expression="" defaultValue="&quot;preload&quot;" alwaysStopAt="true" />
     <variable name="cover" expression="" defaultValue="&quot;cover&quot;" alwaysStopAt="true" />
@@ -129,33 +130,33 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iron-input" value="&lt;input is=&quot;iron-input&quot; bind-value=&quot;{{$myValue$}}&quot;&gt;&#10;$END$" toReformat="false" toShortenFQNames="true">
+  <template name="iron-input" value="&lt;input is=&quot;iron-input&quot; bind-value=&quot;{{$myValue$}}&quot;&gt;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="myValue" expression="" defaultValue="&quot;myValue&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iron-localstorage" value="&lt;iron-localstorage name=&quot;$my_app_storage$&quot; value=&quot;{{$value$}}&quot;&gt;&lt;/iron-localstorage&gt;$END$" toReformat="false" toShortenFQNames="true">
+  <template name="iron-localstorage" value="&lt;iron-localstorage name=&quot;$my_app_storage$&quot; value=&quot;{{$value$}}&quot;&gt;&lt;/iron-localstorage&gt;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="my_app_storage" expression="" defaultValue="&quot;my-app-storage&quot;" alwaysStopAt="true" />
     <variable name="value" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iron-media-query" value="&lt;iron-media-query query=&quot;$min_width_640$&quot; query-matches=&quot;{{$largeScreen$}}&quot;&gt;&#10;  $END$&#10;&lt;/iron-media-query&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="iron-media-query" value="&lt;iron-media-query query=&quot;$min_width_640$&quot; query-matches=&quot;{{$largeScreen$}}&quot;&gt;&#10;  $END$&#10;&lt;/iron-media-query&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="min_width_640" expression="" defaultValue="&quot;min-width: 640px&quot;" alwaysStopAt="true" />
     <variable name="largeScreen" expression="" defaultValue="&quot;largeScreen&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iron-meta" value="&lt;iron-meta key=&quot;$info$&quot;&gt;$END$&lt;/iron-meta&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="iron-meta" value="&lt;iron-meta key=&quot;$info$&quot;&gt;$END$&lt;/iron-meta&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="info" expression="" defaultValue="&quot;info&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iron-pages" value="&lt;iron-pages selected=&quot;$0$&quot;&gt;&#10;  &lt;section&gt;$1$&lt;/section&gt;&#10;  &lt;section&gt;$2$&lt;/section&gt;&#10;  &lt;section&gt;$3$&lt;/section&gt;&#10;&lt;/iron-pages&gt;&#10;$END$" toReformat="false" toShortenFQNames="true">
+  <template name="iron-pages" value="&lt;iron-pages selected=&quot;$0$&quot;&gt;&#10;  &lt;section&gt;$1$&lt;/section&gt;&#10;  &lt;section&gt;$2$&lt;/section&gt;&#10;  &lt;section&gt;$3$&lt;/section&gt;&#10;&lt;/iron-pages&gt;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="0" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
@@ -164,26 +165,26 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="iron-selector" value="&lt;iron-selector selected=&quot;$0$&quot;&gt;&#10;  $END$&#10;&lt;/iron-selector&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="iron-selector" value="&lt;iron-selector selected=&quot;$0$&quot;&gt;&#10;  $END$&#10;&lt;/iron-selector&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="0" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-button" value="&lt;paper-button $raised$&gt;$END$&lt;/paper-button&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-button" value="&lt;paper-button $raised$&gt;$END$&lt;/paper-button&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="raised" expression="" defaultValue="&quot;raised&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-autogrow-textarea" value="&lt;paper-autogrow-textarea id=&quot;$a1$&quot;&gt;&#10;  &lt;textarea id=&quot;$t1$&quot;&gt;$END$&lt;/textarea&gt;&#10;&lt;paper-autogrow-textarea&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-autogrow-textarea" value="&lt;paper-autogrow-textarea id=&quot;$a1$&quot;&gt;&#10;  &lt;textarea id=&quot;$t1$&quot;&gt;$END$&lt;/textarea&gt;&#10;&lt;paper-autogrow-textarea&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="a1" expression="" defaultValue="&quot;a1&quot;" alwaysStopAt="true" />
     <variable name="t1" expression="" defaultValue="&quot;t1&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-card" value="&lt;paper-card heading=&quot;$card_title$&quot; $image$ elevation=&quot;$0$&quot; animated-shadow=&quot;$false$&quot;&gt;&#10;  &lt;div class=&quot;card-content&quot;&gt;$1$&lt;/div&gt;&#10;  &lt;div class=&quot;card-actions&quot;&gt;&#10;    $END$&#10;  &lt;/div&gt;&#10;&lt;/paper-card&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-card" value="&lt;paper-card heading=&quot;$card_title$&quot; $image$ elevation=&quot;$0$&quot; animated-shadow=&quot;$false$&quot;&gt;&#10;  &lt;div class=&quot;card-content&quot;&gt;$1$&lt;/div&gt;&#10;  &lt;div class=&quot;card-actions&quot;&gt;&#10;    $END$&#10;  &lt;/div&gt;&#10;&lt;/paper-card&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="card_title" expression="" defaultValue="&quot;Card title&quot;" alwaysStopAt="true" />
     <variable name="image" expression="" defaultValue="&quot;image=\&quot;\&quot;&quot;" alwaysStopAt="true" />
     <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
@@ -193,67 +194,67 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-checkbox" value="&lt;paper-checkbox $checked$&gt;&lt;/paper-checkbox&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-checkbox" value="&lt;paper-checkbox $checked$&gt;&lt;/paper-checkbox&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="checked" expression="" defaultValue="&quot;checked&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-dialog" value="&lt;paper-dialog&gt;&#10;  &lt;h2&gt;$title$&lt;/h2&gt;&#10;  &lt;paper-dialog-scrollable&gt;&#10;    $END$&#10;  &lt;/paper-dialog-scrollable&gt;&#10;&lt;/paper-dialog&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-dialog" value="&lt;paper-dialog&gt;&#10;  &lt;h2&gt;$title$&lt;/h2&gt;&#10;  &lt;paper-dialog-scrollable&gt;&#10;    $END$&#10;  &lt;/paper-dialog-scrollable&gt;&#10;&lt;/paper-dialog&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="title" expression="" defaultValue="&quot;Dialog title&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-dialog1" value="&lt;paper-dialog&gt;&#10;  &lt;h2&gt;$Paper_Dialog$&lt;/h2&gt;&#10;  $END$&#10;&lt;/paper-dialog&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-dialog1" value="&lt;paper-dialog&gt;&#10;  &lt;h2&gt;$Paper_Dialog$&lt;/h2&gt;&#10;  $END$&#10;&lt;/paper-dialog&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="Paper_Dialog" expression="" defaultValue="&quot;Dialog Title&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-drawer-panel" value="&lt;paper-drawer-panel&gt;&#10;  &lt;paper-header-panel drawer&gt;&#10;    &lt;paper-toolbar&gt;$Menu$&lt;/paper-toolbar&gt;&#10;    $END$&#10;  &lt;/paper-header-panel&gt;&#10;  &lt;paper-header-panel main&gt;&#10;    &lt;paper-toolbar&gt;&#10;      &lt;paper-icon-button icon=&quot;menu&quot; paper-drawer-toggle&gt;&lt;/paper-icon-button&gt;&#10;      &lt;div class=&quot;flex&quot;&gt;$My_App$&lt;/div&gt;&#10;    &lt;/paper-toolbar&gt;&#10;  &lt;/paper-header-panel&gt;&#10;&lt;/paper-drawer-panel&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-drawer-panel" value="&lt;paper-drawer-panel&gt;&#10;  &lt;paper-header-panel drawer&gt;&#10;    &lt;paper-toolbar&gt;$Menu$&lt;/paper-toolbar&gt;&#10;    $END$&#10;  &lt;/paper-header-panel&gt;&#10;  &lt;paper-header-panel main&gt;&#10;    &lt;paper-toolbar&gt;&#10;      &lt;paper-icon-button icon=&quot;menu&quot; paper-drawer-toggle&gt;&lt;/paper-icon-button&gt;&#10;      &lt;div class=&quot;flex&quot;&gt;$My_App$&lt;/div&gt;&#10;    &lt;/paper-toolbar&gt;&#10;  &lt;/paper-header-panel&gt;&#10;&lt;/paper-drawer-panel&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="Menu" expression="" defaultValue="&quot;Menu&quot;" alwaysStopAt="true" />
     <variable name="My_App" expression="" defaultValue="&quot;My App&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-fab" value="&lt;paper-fab icon=&quot;$add$&quot;&gt;&lt;/paper-fab&gt;&#10;$END$" toReformat="false" toShortenFQNames="true">
+  <template name="paper-fab" value="&lt;paper-fab icon=&quot;$add$&quot;&gt;&lt;/paper-fab&gt;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="add" expression="" defaultValue="&quot;add&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-header-panel" value="&lt;paper-header-panel class=&quot;flex&quot;&gt;&#10;  &lt;paper-toolbar&gt;$0$&lt;/paper-toolbar&gt;&#10;  &lt;div&gt;$1$&lt;/div&gt;&#10;&lt;/paper-header-panel&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="paper-header-panel" value="&lt;paper-header-panel class=&quot;flex&quot;&gt;&#10;  &lt;paper-toolbar&gt;$0$&lt;/paper-toolbar&gt;&#10;  &lt;div&gt;$1$&lt;/div&gt;&#10;&lt;/paper-header-panel&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-icon-button" value="&lt;paper-icon-button icon=&quot;$END$&quot;&gt;&lt;/paper-icon-button&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-icon-button" value="&lt;paper-icon-button icon=&quot;$END$&quot;&gt;&lt;/paper-icon-button&gt;" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-input" value="&lt;paper-input label=&quot;$0$&quot;&gt;&lt;/paper-input&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-input" value="&lt;paper-input label=&quot;$0$&quot;&gt;&lt;/paper-input&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-item" value="&lt;paper-item&gt;$END&lt;/paper-item&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-item" value="&lt;paper-item&gt;$END&lt;/paper-item&gt;" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-material" value="&lt;paper-material elevation=&quot;$1$&quot;&gt;&#10;  $END$&#10;&lt;/paper-material&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-material" value="&lt;paper-material elevation=&quot;$1$&quot;&gt;&#10;  $END$&#10;&lt;/paper-material&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-menu" value="&lt;paper-menu $multi$&gt;&#10;  &lt;paper-item&gt;$Item1$&lt;/paper-item&gt;&#10;  &lt;paper-item&gt;$Item2$&lt;/paper-item&gt;&#10;&lt;/paper-menu&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-menu" value="&lt;paper-menu $multi$&gt;&#10;  &lt;paper-item&gt;$Item1$&lt;/paper-item&gt;&#10;  &lt;paper-item&gt;$Item2$&lt;/paper-item&gt;&#10;&lt;/paper-menu&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="multi" expression="" defaultValue="&quot;multi&quot;" alwaysStopAt="true" />
     <variable name="Item1" expression="" defaultValue="&quot;Item1&quot;" alwaysStopAt="true" />
     <variable name="Item2" expression="" defaultValue="&quot;Item2&quot;" alwaysStopAt="true" />
@@ -261,19 +262,19 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-progress" value="&lt;paper-progress value=&quot;$10$&quot;&gt;&lt;/paper-progress&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-progress" value="&lt;paper-progress value=&quot;$10$&quot;&gt;&lt;/paper-progress&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="10" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-radio-button" value="&lt;paper-radio-button&gt;$1$&lt;/paper-radio-button&gt;$END$" toReformat="false" toShortenFQNames="true">
+  <template name="paper-radio-button" value="&lt;paper-radio-button&gt;$1$&lt;/paper-radio-button&gt;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-radio-group" value="&lt;paper-radio-group selected=&quot;$small$&quot;&gt;&#10;  &lt;paper-radio-button name=&quot;$small$&quot;&gt;$Small$&lt;/paper-radio-button&gt;&#10;  &lt;paper-radio-button name=&quot;$medium$&quot;&gt;$Medium$&lt;/paper-radio-button&gt;&#10;  &lt;paper-radio-button name=&quot;$large$&quot;&gt;$Large$&lt;/paper-radio-button&gt;&#10;&lt;/paper-radio-group&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-radio-group" value="&lt;paper-radio-group selected=&quot;$small$&quot;&gt;&#10;  &lt;paper-radio-button name=&quot;$small$&quot;&gt;$Small$&lt;/paper-radio-button&gt;&#10;  &lt;paper-radio-button name=&quot;$medium$&quot;&gt;$Medium$&lt;/paper-radio-button&gt;&#10;  &lt;paper-radio-button name=&quot;$large$&quot;&gt;$Large$&lt;/paper-radio-button&gt;&#10;&lt;/paper-radio-group&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="small" expression="" defaultValue="&quot;small&quot;" alwaysStopAt="true" />
     <variable name="Small" expression="" defaultValue="&quot;Small&quot;" alwaysStopAt="true" />
     <variable name="medium" expression="" defaultValue="&quot;medium&quot;" alwaysStopAt="true" />
@@ -284,12 +285,12 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-ripple" value="&lt;paper-ripple&gt;&lt;/paper-ripple&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-ripple" value="&lt;paper-ripple&gt;&lt;/paper-ripple&gt;" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-scroll-header-panel" value="&lt;paper-scroll-header-panel $condenses$ class=&quot;flex&quot;&gt;&#10;  &lt;paper-toolbar&gt;&#10;    &lt;div&gt;$My_App$&lt;/div&gt;&#10;  &lt;/paper-toolbar&gt;&#10;  &lt;div&gt;$Page_Content$&lt;/div&gt;&#10;&lt;/paper-scroll-header-panel&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-scroll-header-panel" value="&lt;paper-scroll-header-panel $condenses$ class=&quot;flex&quot;&gt;&#10;  &lt;paper-toolbar&gt;&#10;    &lt;div&gt;$My_App$&lt;/div&gt;&#10;  &lt;/paper-toolbar&gt;&#10;  &lt;div&gt;$Page_Content$&lt;/div&gt;&#10;&lt;/paper-scroll-header-panel&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="condenses" expression="" defaultValue="&quot;condenses&quot;" alwaysStopAt="true" />
     <variable name="My_App" expression="" defaultValue="&quot;My App&quot;" alwaysStopAt="true" />
     <variable name="Page_Content" expression="" defaultValue="&quot;Page Content&quot;" alwaysStopAt="true" />
@@ -297,7 +298,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-slider" value="&lt;paper-slider min=&quot;$10$&quot; max=&quot;$200$&quot; value=&quot;$110$&quot;&gt;&lt;/paper-slider&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-slider" value="&lt;paper-slider min=&quot;$10$&quot; max=&quot;$200$&quot; value=&quot;$110$&quot;&gt;&lt;/paper-slider&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="10" expression="" defaultValue="&quot;10&quot;" alwaysStopAt="true" />
     <variable name="200" expression="" defaultValue="&quot;200&quot;" alwaysStopAt="true" />
     <variable name="110" expression="" defaultValue="&quot;110&quot;" alwaysStopAt="true" />
@@ -305,18 +306,18 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-spinner" value="&lt;paper-spinner $active$&gt;&lt;/paper-spinner&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-spinner" value="&lt;paper-spinner $active$&gt;&lt;/paper-spinner&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="active" expression="" defaultValue="&quot;active&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-tab" value="&lt;paper-tab&gt;$END$&lt;/paper-tab&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-tab" value="&lt;paper-tab&gt;$END$&lt;/paper-tab&gt;" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-tabs" value="&lt;paper-tabs selected=&quot;$0$&quot;&gt;&#10;  &lt;paper-tab&gt;$Tab1$&lt;/paper-tab&gt;&#10;  &lt;paper-tab&gt;$Tab2$&lt;/paper-tab&gt;&#10;  &lt;paper-tab&gt;$Tab3$&lt;/paper-tab&gt;&#10;&lt;/paper-tabs&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-tabs" value="&lt;paper-tabs selected=&quot;$0$&quot;&gt;&#10;  &lt;paper-tab&gt;$Tab1$&lt;/paper-tab&gt;&#10;  &lt;paper-tab&gt;$Tab2$&lt;/paper-tab&gt;&#10;  &lt;paper-tab&gt;$Tab3$&lt;/paper-tab&gt;&#10;&lt;/paper-tabs&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="0" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
     <variable name="Tab1" expression="" defaultValue="&quot;Tab1&quot;" alwaysStopAt="true" />
     <variable name="Tab2" expression="" defaultValue="&quot;Tab2&quot;" alwaysStopAt="true" />
@@ -325,25 +326,25 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-toast" value="&lt;paper-toast text=&quot;$Your_draft_has_been_discarded$&quot;&gt;$END$&lt;/paper-toast&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-toast" value="&lt;paper-toast text=&quot;$Your_draft_has_been_discarded$&quot;&gt;$END$&lt;/paper-toast&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="Your_draft_has_been_discarded" expression="" defaultValue="&quot;Toast Text&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-toggle-button" value="&lt;paper-toggle-button $checked$&gt;&lt;/paper-toggle-button&gt;$END$" toReformat="false" toShortenFQNames="true">
+  <template name="paper-toggle-button" value="&lt;paper-toggle-button $checked$&gt;&lt;/paper-toggle-button&gt;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="checked" expression="" defaultValue="&quot;checked&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-toolbar" value="&lt;paper-toolbar class=&quot;$tall$&quot;&gt;&#10;  $END$&#10;&lt;/paper-toolbar&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-toolbar" value="&lt;paper-toolbar class=&quot;$tall$&quot;&gt;&#10;  $END$&#10;&lt;/paper-toolbar&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="tall" expression="" defaultValue="&quot;tall&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="paper-tooltip" value="&lt;paper-tooltip&#10;  for=&quot;$0$&quot;&#10;  position=&quot;$bottom$&quot;&#10;  offset=&quot;$14$&quot;&gt;&#10;  $END$&#10;&lt;/paper-tooltip&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="paper-tooltip" value="&lt;paper-tooltip&#10;  for=&quot;$0$&quot;&#10;  position=&quot;$bottom$&quot;&#10;  offset=&quot;$14$&quot;&gt;&#10;  $END$&#10;&lt;/paper-tooltip&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="0" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
     <variable name="bottom" expression="" defaultValue="&quot;bottom&quot;" alwaysStopAt="true" />
     <variable name="14" expression="" defaultValue="&quot;14&quot;" alwaysStopAt="true" />
@@ -351,31 +352,31 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="pefs" value="&lt;link rel=&quot;import&quot; href=&quot;$0$/polymer/polymer.html&quot;&gt;&#10;&#10;&lt;dom-module id=&quot;$selector$&quot;&gt;&#10;  &lt;template&gt;&#10;    &lt;style&gt;&#10;      :host {&#10;        display: block;&#10;      }&#10;    &lt;/style&gt;&#10;    $END$&#10;  &lt;/template&gt;&#10;  &lt;script&gt;&#10;    (function() {&#10;      'use strict';&#10;        &#10;      Polymer({&#10;        is: '$selector$'&#10;      });&#10;    })();&#10;  &lt;/script&gt;&#10;&lt;/dom-module&gt;" description="polymer element full strict" toReformat="false" toShortenFQNames="true">
+  <template name="pefs" value="&lt;link rel=&quot;import&quot; href=&quot;$0$/polymer/polymer.html&quot;&gt;&#10;&#10;&lt;dom-module id=&quot;$selector$&quot;&gt;&#10;  &lt;template&gt;&#10;    &lt;style&gt;&#10;      :host {&#10;        display: block;&#10;      }&#10;    &lt;/style&gt;&#10;    $END$&#10;  &lt;/template&gt;&#10;  &lt;script&gt;&#10;    (function() {&#10;      'use strict';&#10;        &#10;      Polymer({&#10;        is: '$selector$'&#10;      });&#10;    })();&#10;  &lt;/script&gt;&#10;&lt;/dom-module&gt;" description="polymer element full strict" toReformat="true" toShortenFQNames="true">
     <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="selector" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="pes" value="&lt;dom-module id=&quot;$selector$&quot;&gt;&#10;  &lt;link rel=&quot;import&quot; type=&quot;css&quot; href=&quot;$selector$.css&quot;&gt;&#10;  &lt;template&gt;&#10;    $END$&#10;  &lt;/template&gt;&#10;  &lt;script&gt;&#10;    Polymer({&#10;      is: '$selector$'&#10;    });&#10;  &lt;/script&gt;&#10;&lt;/dom-module&gt;" description="polymer element, external styles" toReformat="false" toShortenFQNames="true">
+  <template name="pes" value="&lt;dom-module id=&quot;$selector$&quot;&gt;&#10;  &lt;link rel=&quot;import&quot; type=&quot;css&quot; href=&quot;$selector$.css&quot;&gt;&#10;  &lt;template&gt;&#10;    $END$&#10;  &lt;/template&gt;&#10;  &lt;script&gt;&#10;    Polymer({&#10;      is: '$selector$'&#10;    });&#10;  &lt;/script&gt;&#10;&lt;/dom-module&gt;" description="polymer element, external styles" toReformat="true" toShortenFQNames="true">
     <variable name="selector" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="domb" value="&lt;template is=&quot;dom-bind&quot;&gt;&#10;  $END$&#10;&lt;/template&gt;" description="Template &quot;dom-bind&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="domb" value="&lt;template is=&quot;dom-bind&quot;&gt;&#10;  $END$&#10;&lt;/template&gt;" description="Template &quot;dom-bind&quot;" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="domi" value="&lt;template is=&quot;dom-if&quot; if={{$isEnabled$}}&gt;&#10;  $END$&#10;&lt;/template&gt;" description="Template: dom-if" toReformat="false" toShortenFQNames="true">
+  <template name="domi" value="&lt;template is=&quot;dom-if&quot; if={{$isEnabled$}}&gt;&#10;  $END$&#10;&lt;/template&gt;" description="Template: dom-if" toReformat="true" toShortenFQNames="true">
     <variable name="isEnabled" expression="" defaultValue="&quot;isEnabled&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="domr" value="&lt;template is=&quot;dom-repeat&quot; items={{$array$}} &#10;  as=$item$ index-as=$index$&#10;  filter=&quot;$isHandler$&quot; sort=&quot;$sortHandler$&quot; observe=&quot;$itemField1_itemField2$&quot;&gt;&#10;  &lt;!-- {{$item$}} and {{$index$}} can be used in this binding scope --&gt;&#10;  $END$&#10;&lt;/template&gt;" description="Template: dom-repeat" toReformat="false" toShortenFQNames="true">
+  <template name="domr" value="&lt;template is=&quot;dom-repeat&quot; items={{$array$}} &#10;  as=$item$ index-as=$index$&#10;  filter=&quot;$isHandler$&quot; sort=&quot;$sortHandler$&quot; observe=&quot;$itemField1_itemField2$&quot;&gt;&#10;  &lt;!-- {{$item$}} and {{$index$}} can be used in this binding scope --&gt;&#10;  $END$&#10;&lt;/template&gt;" description="Template: dom-repeat" toReformat="true" toShortenFQNames="true">
     <variable name="array" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
     <variable name="item" expression="" defaultValue="&quot;item&quot;" alwaysStopAt="true" />
     <variable name="index" expression="" defaultValue="&quot;index&quot;" alwaysStopAt="true" />
@@ -386,14 +387,20 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="template" value="&lt;template$0$&gt;$END$&lt;/template&gt;" description="template" toReformat="false" toShortenFQNames="true">
+  <template name="template" value="&lt;template$0$&gt;$END$&lt;/template&gt;" description="template" toReformat="true" toShortenFQNames="true">
     <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="webcomponents" value="&lt;script src=&quot;$bower_components$/webcomponentsjs/webcomponents-lite.js&quot;&gt;&lt;/script&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="webcomponents" value="&lt;script src=&quot;$bower_components$/webcomponentsjs/webcomponents-lite.js&quot;&gt;&lt;/script&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="bower_components" expression="" defaultValue="&quot;bower_components&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="pe" value="&lt;dom-module id=&quot;$0$&quot;&gt;&#10;  &lt;template&gt;&#10;    &lt;style&gt;&#10;      :host {&#10;        display: block;&#10;      }&#10;    &lt;/style&gt;&#10;    $END$&#10;  &lt;/template&gt;&#10;  &lt;script&gt;&#10;    Polymer({&#10;      is: '$0$'&#10;    });&#10;  &lt;/script&gt;&#10;&lt;/dom-module&gt;" description="polymer element" toReformat="true" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
