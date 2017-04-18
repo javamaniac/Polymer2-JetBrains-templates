@@ -1,38 +1,42 @@
 <idea-plugin>
-  <id>de.ifahrentholz.snippets.polymer</id>
+  <id>de.ifahrentholz.polymer</id>
   <name>Polymer Snippets</name>
-  <version>1.1.0</version>
-  <vendor email="ingof.work@gmail.com" url="https://github.com/ifahrentholz/intellij-polymer-live-templates">Polymer Snippets:</vendor>
+  <version>1.1.1</version>
+  <vendor email="ingof.work@gmail.com" url="https://github.com/ifahrentholz/intellij-polymer-live-templates">@ifahrentholz</vendor>
 
   <description><![CDATA[
       <img width="55" height="44" src="https://www.polymer-project.org/images/logos/p-logo.png" />
       <br /> <br />
       <div>
-        A collection of common Polymer snippets.
-
+        <h2>A collection of common Polymer templates / snippets.</h2>
         <br /><br />
-        Please report any issues <a href="https://github.com/ifahrentholz/intellij-polymer-live-templates/issues">here</a>.
+        <p><a href="https://github.com/ifahrentholz/intellij-polymer-live-templates">GitHub Homepage</a></p>
+        <p><a href="https://github.com/ifahrentholz/intellij-polymer-live-templates/issues">Issues</a></p>
       </div>
     ]]></description>
 
   <change-notes><![CDATA[
-      Add addtional snippet for "Polymer Element" (Abbreviation: pe)
-      Update the README.md
+      <dl>
+        <dt>
+          Fix installation issue.
+        </dt>
+      </dl>
+
     ]]>
   </change-notes>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="145.0"/>
+  <idea-version since-build="107.105"/>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
 
   <depends>com.intellij.modules.lang</depends>
+  <depends>com.intellij.modules.platform</depends>
 
 
   <extensions defaultExtensionNs="com.intellij">
-    <defaultLiveTemplatesProvider implementation="PolymerTemplateProvider"/>
-    <liveTemplateContext implementation="PolymerContext"/>
+    <defaultLiveTemplatesProvider implementation="de.ifahrentholz.polymer.PolymerTemplatesProvider"/>
   </extensions>
 
   <actions>

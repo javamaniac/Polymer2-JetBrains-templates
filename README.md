@@ -2,19 +2,21 @@
 
 This is a port of the VSCode snippet collection from [chimon2000](https://github.com/chimon2000/vscode-polymer-snippets).
 
-![Usage in Webstorm](documentation/images/polymer-element.gif)
+![Usage in Webstorm](animation.gif)
 
 
-# Installation
+### Intallation (in three easy steps)
 
-#### From Jetbrains Plugin Repository
+To install the plugin open your editor (WebStorm or PHPStorm) and hit:
 
-1. Goto Preferences -> Plugins
-2. Click on Browse Repositories
-3. Search for "Polymer Snippets"
+1) `File > Settings > Plugins` and click on the `Browse repositories` button.
+
+2) Search for `Bootstrap` then right click and select `Download plugin`.
+
+3) Finally hit the `Apply` button, agree to restart your IDE and you're all done!
 
 
-#### By copy XML file
+### Intallation by copying XML file
 
 1. Download resources/liveTemplates/Polymer.xml
 2. Place the XML file in your templates folder : On OSX that would be ~/Library/Preferences/WebStorm{Version}/templates

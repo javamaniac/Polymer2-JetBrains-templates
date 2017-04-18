@@ -1,7 +1,9 @@
+package de.ifahrentholz.polymer;
+
 import com.intellij.codeInsight.template.impl.DefaultLiveTemplatesProvider;
 import org.jetbrains.annotations.Nullable;
 
-public class PolymerTemplateProvider implements DefaultLiveTemplatesProvider {
+public class PolymerTemplatesProvider implements DefaultLiveTemplatesProvider {
     @Override
     public String[] getDefaultLiveTemplateFiles() {
         return new String[]{"liveTemplates/Polymer"};
@@ -10,6 +12,6 @@ public class PolymerTemplateProvider implements DefaultLiveTemplatesProvider {
     @Nullable
     @Override
     public String[] getHiddenLiveTemplateFiles() {
-        return new String[0];
+        return null;
     }
 }
