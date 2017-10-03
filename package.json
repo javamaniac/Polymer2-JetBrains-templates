@@ -4,7 +4,10 @@
   "description": "Polymer 2 Live Templates for JetBrains IDE (WebStorm, PhpStorm, etc.)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-vscode": "snippetToVsCode -s node_modules/PolymerSnippets -o temp/snippets.json",
+    "build-jetbrains": "node node_modules/sublime-snippets-to-jetbrains-templates/convert.js temp/snippets.json > resources/liveTemplates/Polymer.xml",
+    "build": "npm run build-vscode && npm run build-jetbrains"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,8 @@
   },
   "homepage": "https://github.com/javamaniac/Polymer2-JetBrains-templates#readme",
   "dependencies": {
+    "html-element": "^2.2.0",
+    "sublime-snippets-to-jetbrains-templates": "git+https://github.com/javamaniac/sublime-snippets-to-jetbrains-templates.git",
     "vscode-polymer-snippets": "git+https://github.com/javamaniac/Polymer2-vscode-snippets.git"
   }
 }
